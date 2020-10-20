@@ -76,17 +76,6 @@ int main(){
     write(connfd2, message, strlen(message));
     
     cout << "Server Sending: '" << message << "'" << endl;
-    
-    //read(connfd1, buff, sizeof(buff));
-    //cout << "From Client: " << buff << endl;
-    //write(connfd1, message, strlen(message));
-    //cout << "Sending: " << message << endl;
-    
-    //read(connfd2, buff, sizeof(buff));
-    //cout << "From Client: " << buff << endl;
-    //write(connfd2, message, strlen(message));
-    //cout << "Sending: " << message << endl;
-    
     cout << "Sent acknowledgment to both X and Y" << endl;
     
     return 0;

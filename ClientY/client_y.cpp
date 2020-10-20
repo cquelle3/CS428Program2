@@ -32,9 +32,10 @@ int main(){
     }
     
     write(sockfd, message, strlen(message));
+    bzero(buff, sizeof(buff));
     read(sockfd, buff, sizeof(buff));
-    cout << "Sent to Server: '" << message << "'" << endl;
-    cout << "Received from Server: '" << buff << "'" << endl;    
+    cout << "Sent to Server (Client Y): '" << message << "'" << endl;
+    cout << "Received from Server (Client Y): '" << buff << "'" << endl;    
     
     return 0;
 }
